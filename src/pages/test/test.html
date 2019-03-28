@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Test dla {{exercise.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row text-center>
+      <h3>
+        <i>{{text}}</i> <br>
+        ~Arnold <br>
+        {{text2}}
+      </h3>
+    </ion-row>
+    <ion-row>
+      <ion-col col-8>
+        <ion-item>
+          <ion-input type="number" [(ngModel)]="score" placeholder="Score"></ion-input>
+        </ion-item>
+      </ion-col>
+      <ion-col col-4>
+        <button ion-button full (click)="saveScore()">Save</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <button ion-button full (click)="openExercise()">Start training</button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

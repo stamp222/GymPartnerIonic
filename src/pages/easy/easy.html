@@ -1,0 +1,12 @@
+<ion-content no-padding>
+    <ion-list inset>
+      <p text-center>Easy level</p>
+      <button ion-item *ngFor="let item of exercises; let i = index" (click)="onDetails(item, i)">
+        <h2>{{item.name}}</h2>
+        <ion-note color="danger">
+          {{item.kind}}
+        </ion-note>
+      </button> 
+    </ion-list>
+</ion-content>
+  

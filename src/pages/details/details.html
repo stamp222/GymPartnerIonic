@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{exercise.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row text-center>
+      <h3>
+        <i>Na początku zalecam położenie solidnych fundamentów pod dalszy rozwój. Osiągniesz to za pomocą tzw. ćwiczeń z
+          "wolnymi rękami". Można je wykonywać bez drogiego sprzętu. Potrzebne są tylko zwykłe meble i własne ciało</i>
+        ~Arnold
+      </h3>
+    </ion-row>
+    <ion-row>
+      <button ion-button full (click)="openUrl()">Instruction</button>
+    </ion-row>
+    <ion-row>
+      <button ion-button full (click)="openTest()">TEST</button>
+    </ion-row>
+    <ion-row>
+      <button ion-button full (click)="openExercise()">Start exercise</button>
+    </ion-row>
+  </ion-grid>
+</ion-content>

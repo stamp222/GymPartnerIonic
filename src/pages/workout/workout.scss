@@ -1,11 +1,15 @@
-page-home {
+
+    .masters {
+        background-color: #FF8C00;
+      }
+    
     .position {
         height: 100%;
-        display: flex;
+        display: block;
         vertical-align: middle;
     }
 
     ion-icon {
         font-size: 100px; //Preferred size here
     }
-}
+  

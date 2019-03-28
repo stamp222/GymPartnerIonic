@@ -1,0 +1,107 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{exercise.name}}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-grid>
+    <ion-row text-center>
+      <h4>
+        <i>Rozciąganie jest bardzo ważne. Gdy dopiero zaczynasz trening, jest równie istotne jak same ćwiczenia</i> <br>
+        ~Arnold
+      </h4>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <ion-label>Monday</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor1">{{s1}}</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor2">{{s2}}</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor3">{{s3}}</ion-label>
+      </ion-col>
+
+      <ion-col col-3>
+        <button ion-button full (click)="breakTime()" [disabled]="isenabled">Break</button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col col-3>
+        <ion-label>Wednesday</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor4">{{s4}}</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor5">{{s5}}</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor6">{{s6}}</ion-label>
+      </ion-col>
+
+      <ion-col col-3>
+        <button ion-button full (click)="breakTime()" [disabled]="isenabled">Break</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-3>
+        <ion-label>Friday</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor7">{{s7}}</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor8">{{s8}}</ion-label>
+      </ion-col>
+
+      <ion-col col-2>
+        <ion-label [color]="buttonColor9">{{s9}}</ion-label>
+      </ion-col>
+
+      <ion-col col-3>
+        <button ion-button full (click)="breakTime()" [disabled]="isenabled">Break</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col col-4>
+        <ion-label>Sunday</ion-label>
+      </ion-col>
+
+      <ion-col col-5>
+      </ion-col>
+
+      <ion-col col-3>
+        <button ion-button full (click)="openTest()">Test</button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <button ion-button full (click)="startTimer()" [disabled]="isenabled2">{{buttonTimer}}</button>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <h1 text-center>Break time: {{displayTime}}</h1>
+      </ion-item>
+    </ion-row>
+    <ion-row>
+      <ion-item>
+        <h1 text-center>Timer: {{displayTime2}}</h1>
+      </ion-item>
+    </ion-row>
+  </ion-grid>
+</ion-content>
